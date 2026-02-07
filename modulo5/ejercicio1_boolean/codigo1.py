@@ -8,7 +8,7 @@ es_finde = False
 # TODO 1: Usa una expresión booleana con "and"
 # Por ejemplo: ¿Puede salir hoy solo si tiene 18 años o más Y si tiene permiso?
 
-
+jffvjjff
 
 # TODO 2: Usa una expresión booleana con "or" para permitir salir si es fin de semana o tiene permiso
 
