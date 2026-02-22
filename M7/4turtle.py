@@ -10,7 +10,7 @@
 
 # Importaciones necesarias
 import math
-from turtle import make_turtle, forward, left, right, penup, pendown
+import turtle
 
 def triangulo(longitud, angulo):
     """
@@ -19,8 +19,12 @@ def triangulo(longitud, angulo):
     
     Pista:
     - ¿Qué representa 'longitud'?
+        el radio
     - ¿Qué representa 'angulo'?
+        el angulo oara hallar el arco 
     - ¿Qué debería dibujar esta función?
+    un circulo
+
     """
     
     # --------------------------------
@@ -35,12 +39,12 @@ def triangulo(longitud, angulo):
     # Pista: estás trabajando con dos lados iguales (longitud)
     # y el ángulo central entre ellos.
     # Puedes usar math.sin().
-    base =  # Escribe aquí el cálculo
+    base = 2 * longitud * math.sin(angulo_rad / 2)
     
     # TODO:
     # Calcula el ángulo que debe girar la tortuga en las esquinas
     # para que el triángulo se cierre correctamente.
-    angulo_giro =  # Escribe aquí el cálculo
+    angulo_giro = (180 - angulo) / 2
 
     # --------------------------------
     # Paso 3: Dibujo del triángulo
@@ -54,8 +58,13 @@ def triangulo(longitud, angulo):
     
     # TODO:
     # Escribe aquí los movimientos necesarios.
+    turtle.forward(longitud)
+    turtle.left(180 - angulo_giro)   
+    turtle.forward(base)
+    turtle.left(180 - angulo_giro)  
+    turtle.forward(longitud)
+    turtle.left(180)  
     
-    pass  # ⚠️ Borra esta línea cuando completes el código
 
 
 def dibujar_tarta(n_porciones, longitud):
@@ -65,7 +74,9 @@ def dibujar_tarta(n_porciones, longitud):
     
     Pista:
     - ¿Qué es n_porciones?
+    el numero de veces que se crearan las tartas 
     - ¿Qué representa longitud?
+    la base del triangulo 
     """
     
     # --------------------------------
@@ -75,7 +86,7 @@ def dibujar_tarta(n_porciones, longitud):
     # TODO:
     # Calcula el ángulo central de cada porción.
     # Pista: un círculo completo tiene 360 grados.
-    angulo_porcion =  # Divide 360 entre el número de porciones
+    angulo_porcion = 360 / n_porciones 
     
     # --------------------------------
     # Paso 5: Dibujar todas las porciones
@@ -91,7 +102,9 @@ def dibujar_tarta(n_porciones, longitud):
     #     triangulo(...)
     #     left(...)
     
-    pass  # ⚠️ Borra esta línea cuando completes el código
+    for i in range(n_porciones):
+        triangulo(longitud,360 / n_porciones)
+        turtle.left(360 / n_porciones)
 
 
 
@@ -99,12 +112,15 @@ def dibujar_tarta(n_porciones, longitud):
 # Bloque para probar la función
 # ==================================
 
-make_turtle(height=400, width=600)
 
+ventana=turtle.Screen()
+ventana.setup(width = 600, height = 400 )
 # ----------------------------------
 # Prueba 1
 # ----------------------------------
-
+turtle.penup()
+turtle.goto(100, 0)
+turtle.pendown()
 print("Dibujando una tarta de 5 porciones...")
 dibujar_tarta(5, 80)
 
@@ -121,5 +137,15 @@ dibujar_tarta(5, 80)
 # Prueba 2
 # ----------------------------------
 
+
 print("Dibujando una tarta de 8 porciones...")
-dibujar_tarta(8, 60)
+# como el nombre lo dice alzamos el lapiz 
+turtle.penup()
+#nos permite movernos en base a x and y a la posicion que querramos 
+turtle.goto(-100, 0)
+# como el nombre lo dice bajamos el lapiz 
+turtle.pendown()
+print ("Dibujando una tarta de 8 porciones...")
+dibujar_tarta(9, 80)
+
+turtle.done()  

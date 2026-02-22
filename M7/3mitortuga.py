@@ -18,8 +18,7 @@
 # Importaciones necesarias
 # ------------------------------------------
 
-from turtle import make_turtle, forward, left
-
+import turtle
 # ------------------------------------------
 # Paso 1: Crear la ventana y la tortuga
 # ------------------------------------------
@@ -30,7 +29,7 @@ from turtle import make_turtle, forward, left
 
 # Escribe aquí tu código
 
-
+turtle.setup(width=400 , height= 400 )
 # ------------------------------------------
 # Paso 2: Dibujar una línea
 # ------------------------------------------
@@ -41,7 +40,7 @@ from turtle import make_turtle, forward, left
 
 # Escribe aquí tu código
 
-
+#turtle.forward(100)
 # ------------------------------------------
 # Paso 3: Girar la tortuga
 # ------------------------------------------
@@ -52,7 +51,8 @@ from turtle import make_turtle, forward, left
 
 # Escribe aquí tu código
 
-
+#turtle.left(90)
+#turtle.forward(100)
 # ------------------------------------------
 # Paso 4: Dibujar un cuadrado (sin bucle)
 # ------------------------------------------
@@ -70,7 +70,13 @@ print("Dibujando un cuadrado sin bucle...")
 
 # Escribe aquí tu código
 
-
+#turtle.forward(100)
+#turtle.left(90)
+#turtle.forward(100)
+#turtle.left(90)
+#turtle.forward(100)
+#turtle.left(90)
+#turtle.forward(100)
 # ------------------------------------------
 # Paso 5: Dibujar un cuadrado usando un bucle
 # ------------------------------------------
@@ -83,9 +89,9 @@ print("Dibujando un cuadrado con bucle...")
 #   - avanzar 100
 #   - girar 90 grados
 
-# for ...:
-#     forward(...)
-#     left(...)
+#for i in range (4) :
+ #   turtle.forward(100)
+  #  turtle.left(90)
 
 
 # ------------------------------------------
@@ -97,3 +103,13 @@ print("Dibujando un cuadrado con bucle...")
 # - Un triángulo tiene 3 lados.
 # - Un giro completo es 360 grados.
 # - ¿Cuánto debe girar en cada esquina?
+
+turtle.left(120)
+turtle.forward(100)
+turtle.left(120)
+turtle.forward(100)
+turtle.left(120)
+turtle.forward(100)
+
+""""
+todos los resultados estan con # para que me deje procesar en orden 

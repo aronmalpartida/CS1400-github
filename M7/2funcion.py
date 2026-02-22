@@ -1,18 +1,5 @@
-# --------------------------------------------------------------------------
-#          FUNCIÓN PARA CALCULAR EL ÁREA DE UN RECTÁNGULO
-# --------------------------------------------------------------------------
-# Descripción:
-# El objetivo es crear una función que reciba el largo y el ancho de un
-# rectángulo y devuelva su área.
-#
-# Instrucciones para el estudiante:
-# 1. Completa la función `calcular_area_rectangulo`.
-# 2. La función esta recibiendo dos argumentos: `largo` y `ancho`.
-# 3. Dentro de la función, calcula el área (largo * ancho).
-# 4. La función debe devolver el área calculada usando una nueva variable 'area' y la sentencia `return`.
-# --------------------------------------------------------------------------
-
 def calcular_area_rectangulo(largo, ancho):
+    
     """
     Calcula el área de un rectángulo.
 
@@ -25,16 +12,17 @@ def calcular_area_rectangulo(largo, ancho):
     """
     # TODO: Paso 1. Calcula el área. La fórmula es largo * ancho.
     
+    area = largo * ancho
 
     # TODO: Paso 2. Devuelve el valor calculado.
     # Reemplaza 'None' con la variable que contiene el área.
-    return None
+    return area
 
 
 # --- Bloque para probar tu función ---
 # Este código no será calificado, es solo para que pruebes tu función.
-# Puedes modificar los valores de `largo_prueba` y `ancho_prueba`.
-if __name__ == "__main__":
+# Puedes modificar los valores de largo_prueba y ancho_prueba.
+if _name_ == "_main_":
     # Ejemplo 1
     largo_prueba = 10
     ancho_prueba = 5
