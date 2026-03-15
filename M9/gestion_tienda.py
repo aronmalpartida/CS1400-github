@@ -10,19 +10,23 @@
 
 # No te olvides de agregar comenantarios a cada función explicando qué hace y cómo funciona.
 
+# este me permite agregar producto con sus caracteristicas al inventario si no es un numero en base 10 me dira error 
 def agregar_producto(inventario, nombre, precio):
-    """
+    """ 
     Agrega o actualiza un producto en el diccionario.
     Maneja el error si el precio no es un número.
     """
+    
     try:
         # Convertimos a float para asegurar que sea un número
         precio_num = float(precio)
         inventario[nombre] = precio_num
         return True
+    
     except ValueError:
         # Si no se puede convertir a número, devolvemos False
         return False
+# este me permite buscar el precio del producto agregado o ya existente de mi inventario 
 
 def buscar_precio(inventario, nombre):
     """
@@ -32,6 +36,7 @@ def buscar_precio(inventario, nombre):
     # Usamos .get() para evitar que el programa falle si la llave no existe
     return inventario.get(nombre, None)
 
+# este me muestra la lista completa de mi inventario con precio y nombre 
 def listar_productos(inventario):
     """
     Imprime todos los productos usando un bucle for.
