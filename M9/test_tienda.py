@@ -1,3 +1,7 @@
+"""
+por lo que veo solo me pide verificar los codigos y al correr mi terminal me sale pruebas pasadas 
+"""
+
 # test_tienda.py
 from gestion_tienda import agregar_producto, buscar_precio
 
