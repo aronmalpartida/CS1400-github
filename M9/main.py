@@ -9,10 +9,10 @@ def mostrar_menu():
     # El programa seguirá ejecutándose hasta que el usuario elija salir.
     # TODO #1 Completa el menú de opciones imprimiendo un mensaje y las opciones.
     print(" Menú de Gestión de Tienda ")
-    print("1. Ver el inventario")
-    print("2. Agregar un producto")
-    print("3. Buscar un precio")
-    print("4. Salir")
+    print("1 Ver el inventario")
+    print("2 Agregar un producto")
+    print("3 Buscar un precio")
+    print("4 Salir")
 
 def ejecutar_programa():
     # TODO #2 iniciar un diccionario vacio
