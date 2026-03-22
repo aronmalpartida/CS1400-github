@@ -35,7 +35,7 @@ def filtrar_numeros_pares(lista_numeros):
     for numero in lista_numeros:
     # TODO: Paso 3. Comprueba si el número es par.
      if numero % 2 == 0:
-    # TODO: Paso 4. Si es par, añádelo a la lista `numeros_pares`.
+    # TODO: Paso 4. Si es par, añádelo a la lista `numeros_pares
       numeros_pares.append(numero)
 
     # TODO: Paso 5. Devuelve la nueva lista con los números pares.
