@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Weather Wizard",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/mago_meteorologico_m12/src/weather_wizard/main.py",
+            "console": "integratedTerminal",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/mago_meteorologico_m12/src"
+            }
+        }
+    ]
+}

@@ -1,7 +1,7 @@
-"""
-Punto de entrada para la aplicación Weather Wizard.
-Este archivo coordina la interfaz de usuario con el motor de lógica.
-"""
+#"""
+#Punto de entrada para la aplicación Weather Wizard.
+#Este archivo coordina la interfaz de usuario con el motor de lógica.
+#"""
 import sys
 from weather_wizard.motor import obtener_clima_ciudad
 from weather_wizard.utils import formatear_respuesta

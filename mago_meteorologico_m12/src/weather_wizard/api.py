@@ -1,13 +1,12 @@
-"""
-Módulo para manejar las comunicaciones externas.
-Este archivo se encarga de conectar con servidores de clima reales.
-"""
-
+#"""
+#Módulo para manejar las comunicaciones externas.
+#Este archivo se encarga de conectar con servidores de clima reales.
+#"""
 import requests
 
 # En un entorno profesional, esto vendría de un archivo .env
 BASE_URL = "https://api.weatherapi.com/v1/current.json"
-API_KEY = "tu_llave_aqui"  # Solo para propósitos educativos
+API_KEY = "1ca664c3a98341b795b204100260504"  # Solo para propósitos educativos
 
 def fetch_weather_from_provider(city_name: str) -> dict:
     """
